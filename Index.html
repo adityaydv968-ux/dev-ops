@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Quick-Notes Vault</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>⚡ Dev Quick-Notes Vault</h1>
+      <p>Save quick snippets, commands, and useful links locally.</p>
+    </header>
+
+    <main>
+      <form id="note-form">
+        <input type="text" id="note-title" placeholder="Note Title (e.g. Git Push Command)" required />
+        <textarea id="note-content" placeholder="Content or snippet..." required></textarea>
+        <button type="submit">Save Note</button>
+      </form>
+
+      <section class="notes-grid" id="notes-container">
+        <!-- Notes will be inserted dynamically via JS -->
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
